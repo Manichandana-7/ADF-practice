@@ -52,11 +52,7 @@
 				"outputs": [
 					{
 						"referenceName": "sink_sql_customer",
-						"type": "DatasetReference",
-						"parameters": {
-							"new_schema": "my_schema",
-							"new_table": "customer_data"
-						}
+						"type": "DatasetReference"
 					}
 				]
 			}
