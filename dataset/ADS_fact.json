@@ -1,0 +1,16 @@
+{
+	"name": "ADS_fact",
+	"properties": {
+		"linkedServiceName": {
+			"referenceName": "source_sql",
+			"type": "LinkedServiceReference"
+		},
+		"annotations": [],
+		"type": "AzureSqlTable",
+		"schema": [],
+		"typeProperties": {
+			"schema": "my_schema",
+			"table": "ADS_fact"
+		}
+	}
+}
