@@ -5,26 +5,12 @@
 			"referenceName": "source_sql",
 			"type": "LinkedServiceReference"
 		},
-		"parameters": {
-			"new_schema": {
-				"type": "string"
-			},
-			"new_table": {
-				"type": "string"
-			}
-		},
 		"annotations": [],
 		"type": "AzureSqlTable",
 		"schema": [],
 		"typeProperties": {
-			"schema": {
-				"value": "@dataset().new_schema",
-				"type": "Expression"
-			},
-			"table": {
-				"value": "@dataset().new_table",
-				"type": "Expression"
-			}
+			"schema": "my_schema",
+			"table": "customer_data"
 		}
 	},
 	"type": "Microsoft.DataFactory/factories/datasets"
