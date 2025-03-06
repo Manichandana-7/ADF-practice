@@ -112,7 +112,7 @@
 												"referenceName": "DS_ASQL_sink_xlsm",
 												"type": "DatasetReference",
 												"parameters": {
-													"staging": "stagings",
+													"staging": "stage",
 													"customer": "customer"
 												}
 											}
@@ -178,7 +178,7 @@
 												"referenceName": "DS_ASQL_sink_csv",
 												"type": "DatasetReference",
 												"parameters": {
-													"staging": "stagings",
+													"staging": "stage",
 													"table": {
 														"value": "@{split(item().name, '.')[0]}\n",
 														"type": "Expression"
