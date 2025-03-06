@@ -112,7 +112,7 @@
 												"referenceName": "DS_ASQL_sink_xlsm",
 												"type": "DatasetReference",
 												"parameters": {
-													"staging": "staging",
+													"staging": "stagings",
 													"customer": "customer"
 												}
 											}
@@ -178,7 +178,7 @@
 												"referenceName": "DS_ASQL_sink_csv",
 												"type": "DatasetReference",
 												"parameters": {
-													"staging": "staging",
+													"staging": "stagings",
 													"table": {
 														"value": "@{split(item().name, '.')[0]}\n",
 														"type": "Expression"
@@ -194,8 +194,8 @@
 				}
 			},
 			{
-				"name": "Data flow1",
-				"type": "ExecuteDataFlow",
+				"name": "Stored procedure1",
+				"type": "SqlServerStoredProcedure",
 				"dependsOn": [
 					{
 						"activity": "ForEach1",
@@ -213,15 +213,11 @@
 				},
 				"userProperties": [],
 				"typeProperties": {
-					"dataflow": {
-						"referenceName": "dataflow3",
-						"type": "DataFlowReference"
-					},
-					"compute": {
-						"coreCount": 8,
-						"computeType": "General"
-					},
-					"traceLevel": "Fine"
+					"storedProcedureName": "[dbo].[JOINING]"
+				},
+				"linkedServiceName": {
+					"referenceName": "source_sql",
+					"type": "LinkedServiceReference"
 				}
 			}
 		],

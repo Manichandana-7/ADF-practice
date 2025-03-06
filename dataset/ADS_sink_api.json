@@ -1,0 +1,16 @@
+{
+	"name": "ADS_sink_api",
+	"properties": {
+		"linkedServiceName": {
+			"referenceName": "source_sql",
+			"type": "LinkedServiceReference"
+		},
+		"annotations": [],
+		"type": "AzureSqlTable",
+		"schema": [],
+		"typeProperties": {
+			"schema": "stagings",
+			"table": "data"
+		}
+	}
+}
