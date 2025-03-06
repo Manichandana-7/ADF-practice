@@ -172,7 +172,14 @@
 					"secureOutput": false,
 					"secureInput": false
 				},
-				"userProperties": []
+				"userProperties": [],
+				"typeProperties": {
+					"storedProcedureName": "[dbo].[STORING]"
+				},
+				"linkedServiceName": {
+					"referenceName": "ALS_SQL",
+					"type": "LinkedServiceReference"
+				}
 			}
 		],
 		"annotations": []
