@@ -1,0 +1,16 @@
+{
+	"name": "ADS_SQL",
+	"properties": {
+		"linkedServiceName": {
+			"referenceName": "ALS_SQL",
+			"type": "LinkedServiceReference"
+		},
+		"annotations": [],
+		"type": "AzureSqlTable",
+		"schema": [],
+		"typeProperties": {
+			"schema": "my_schema",
+			"table": "Electronics"
+		}
+	}
+}
