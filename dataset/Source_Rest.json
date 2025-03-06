@@ -1,0 +1,12 @@
+{
+	"name": "Source_Rest",
+	"properties": {
+		"linkedServiceName": {
+			"referenceName": "LS_Weather",
+			"type": "LinkedServiceReference"
+		},
+		"annotations": [],
+		"type": "RestResource",
+		"schema": []
+	}
+}

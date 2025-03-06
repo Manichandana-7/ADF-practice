@@ -1,0 +1,30 @@
+{
+	"name": "DS_ASQL_sink_xlsm",
+	"properties": {
+		"linkedServiceName": {
+			"referenceName": "ALS_SQL",
+			"type": "LinkedServiceReference"
+		},
+		"parameters": {
+			"staging": {
+				"type": "string"
+			},
+			"customer": {
+				"type": "string"
+			}
+		},
+		"annotations": [],
+		"type": "AzureSqlTable",
+		"schema": [],
+		"typeProperties": {
+			"schema": {
+				"value": "@dataset().staging",
+				"type": "Expression"
+			},
+			"table": {
+				"value": "@dataset().customer",
+				"type": "Expression"
+			}
+		}
+	}
+}
