@@ -5,7 +5,8 @@
 		"annotations": [],
 		"type": "AzureBlobStorage",
 		"typeProperties": {
-			"sasUri": "https://sgtrail.blob.core.windows.net/sql-data?sp=rwl&st=2025-03-13T12:58:49Z&se=2025-03-17T20:58:49Z&skoid=91d080be-f5e8-4ca5-8f38-29af4f4e7c92&sktid=2800c0a0-70e9-49be-8733-faeaa6aced99&skt=2025-03-13T12:58:49Z&ske=2025-03-17T20:58:49Z&sks=b&skv=2022-11-02&spr=https&sv=2022-11-02&sr=c&sig=mUjQAb7zxWxSfm%2Fi%2BHT5sAJwMD%2Bf88qhnGvKJJ7vbak%3D?sp=rwl&st=2025-03-13T12:58:49Z&se=2025-03-17T20:58:49Z&skoid=91d080be-f5e8-4ca5-8f38-29af4f4e7c92&sktid=2800c0a0-70e9-49be-8733-faeaa6aced99&skt=2025-03-13T12:58:49Z&ske=2025-03-17T20:58:49Z&sks=b&skv=2022-11-02&spr=https&sv=2022-11-02&sr=c&sig=mUjQAb7zxWxSfm%2Fi%2BHT5sAJwMD%2Bf88qhnGvKJJ7vbak%3D"
+			"connectionString": "DefaultEndpointsProtocol=https;AccountName=sgtrail;EndpointSuffix=core.windows.net;",
+			"encryptedCredential": "eyJDcmVkZW50aWFsSWQiOiI2Nzc2MzYxMi0zYTBiLTQwZGItYTdjMi0zZWFlMGI4MTE3NjQiLCJWZXJzaW9uIjoiMi4wIiwiQ2xhc3NUeXBlIjoiTWljcm9zb2Z0LkRhdGFQcm94eS5Db3JlLkludGVyU2VydmljZURhdGFDb250cmFjdC5DcmVkZW50aWFsU1UwNkNZMTQifQ=="
 		},
 		"connectVia": {
 			"referenceName": "My-ir",
