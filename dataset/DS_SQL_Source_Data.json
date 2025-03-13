@@ -1,0 +1,12 @@
+{
+	"name": "DS_SQL_Source_Data",
+	"properties": {
+		"linkedServiceName": {
+			"referenceName": "LS_SQL_connect",
+			"type": "LinkedServiceReference"
+		},
+		"annotations": [],
+		"type": "SqlServerTable",
+		"schema": []
+	}
+}
